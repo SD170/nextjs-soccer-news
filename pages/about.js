@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const about = () => {
   return (
@@ -10,27 +11,33 @@ const about = () => {
       <h1>dev details:</h1>
       <h4>Saswata Dutta</h4>
       <div>
-        <a className="hover-a" href="https://github.com/SD170">
-          github&rarr;
-        </a>
+        <Link href="https://github.com/SD170" passHref>
+          <a className="hover-a" target="_blank">
+            github&rarr;
+          </a>
+        </Link>
         <br />
-        <a className="hover-a" href="https://www.linkedin.com/in/sd170">
-          LinkedIn&rarr;
-        </a>
+        <Link href="https://www.linkedin.com/in/sd170" passHref>
+          <a className="hover-a" target="_blank">
+            LinkedIn&rarr;
+          </a>
+        </Link>
         <br />
-        <a
-          className="hover-a"
+        <Link
           href="https://stackoverflow.com/users/11974952/saswata-dutta"
+          passHref
         >
-          stackoverflow&rarr;
-        </a>
+          <a className="hover-a" target="_blank">
+            stackoverflow&rarr;
+          </a>
+        </Link>
       </div>
 
       <style jsx>
         {`
-        div{
-          margin:10px
-        }
+          div {
+            margin: 10px;
+          }
           .hover-a {
             display: inline-block;
             position: relative;
