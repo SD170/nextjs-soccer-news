@@ -43,7 +43,7 @@ const PlayerDetail = ({ playerData }) => {
           alt={`Picture of ${playerData.strPlayer}`}
           width={300}
           height={300}
-          responsive
+          responsive="true"
         />
         <h1>{playerData.strPlayer}</h1>
         <div>{playerData.strTeam}</div>
@@ -64,7 +64,7 @@ const PlayerDetail = ({ playerData }) => {
           alt={`fanart of ${playerData.strPlayer}`}
           width={300}
           height={300}
-          responsive
+          responsive="true"
         />
       </div>
 
@@ -75,7 +75,7 @@ const PlayerDetail = ({ playerData }) => {
           alt={`fanart of ${playerData.strPlayer}`}
           width={300}
           height={300}
-          responsive
+          responsive="true"
         />
       </div>
     </>
