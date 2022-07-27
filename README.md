@@ -1,7 +1,7 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
 
 # Next.js Soccer News
-
+### [See live&rarr;](https://nextjs-soccer-news.vercel.app/)
 A next.js app to view recent football news, and player details.
 Used **getServerSideProps()** for generating dynamic news pages with [SSR](https://nextjs.org/docs/basic-features/pages#server-side-rendering).
 Used **getStaticProps()** and **getStaticPaths()** with _fallback_ to initiate [ISR](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) for the players database.
