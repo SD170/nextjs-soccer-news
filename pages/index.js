@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ArticleList from "../components/ArticleList";
+import NewsList from "../components/NewsList";
 
 
 export default function Home({ news }) {
@@ -9,13 +9,13 @@ export default function Home({ news }) {
         <title>Soccer stars</title>
         <meta name="keywords" content="football, soccer" />
       </Head>
-      <ArticleList news={news} />
+      <NewsList news={news} />
     </div>
   );
 }
 
-export const getStaticProps = async () => {
-
+export const getServerSideProps = async (context) => {
+  
   // const data = await fetch(
   //   `https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=${process.env.NEWS_API_KEY}`
   // );
