@@ -6,17 +6,9 @@ const Header = () => {
   return (
     <div>
       <h1 className={styles.title}>
-        <span className="span-title">Soccer</span> Stars
+        <span>Soccer</span> Stars
       </h1>
       <p className={styles.description}>One stop, soccer news</p>
-
-      <style jsx>
-        {`
-          .span-title {
-            background-color: "white";
-          }
-        `}
-      </style>
     </div>
   );
 };

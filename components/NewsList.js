@@ -4,7 +4,7 @@ const NewsList = ({ news }) => {
   return (
     <div className={newsStyles.grid}>
       {news.map((n) => (
-        <div key={n.source.id} className={newsStyles.grid}>
+        <div key={n.title} className={newsStyles.grid}>
             {/* <h3 >{n.title}</h3> */}
 
             <NewsItem eachNews={n}/>
