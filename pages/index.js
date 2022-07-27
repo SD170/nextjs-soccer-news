@@ -35,7 +35,7 @@ export default function Home({ news }) {
   );
 }
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
   const data = await fetch(
     `https://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=${process.env.NEWS_API_KEY}`
   );
@@ -44,6 +44,7 @@ export const getServerSideProps = async (context) => {
   return {
     props: {
       news
-    }
+    },
+    revalidate: 60*60*24,
   };
 };
